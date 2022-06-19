@@ -159,4 +159,23 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Используем классы для карточек
 
+    class MenuCard {
+        constructor(src, alt, title, descr, price) {
+            this.src = src;
+            this.alt = alt;
+            this.title = title;
+            this.descr = descr;
+            this.price = price;
+            this.transfer = 60;
+        }
+
+        changeToRUB() {
+            this.price = this.price + this.transfer;
+        }
+
+
+
+
+    }
+
 });
