@@ -41,8 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Timer
 
-    // const deadLine = new Date(new Date().getTime() + 10 * (24 * 60 * 60 * 1000) + 1000);
-    const deadLine = new Date(new Date().getTime() + 60000);
+    const deadLine = new Date(new Date().getTime() + 10 * (24 * 60 * 60 * 1000));
+    // const deadLine = new Date(new Date().getTime() + 3000);
     // const deadLine = '2022-07-01';
     // const deadLine = '2022-06-14';
 
@@ -146,7 +146,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // const modalTimerId = setTimeout(openModal, 5000);
+    const modalTimerId = setTimeout(openModal, 15000);
 
     function showModalByScroll() {
         if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
