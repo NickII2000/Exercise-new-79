@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // Timer
 
     // const deadLine = new Date(new Date().getTime() + 10 * (24 * 60 * 60 * 1000) + 1000);
-    const deadLine = new Date(new Date().getTime() + 3000);
+    const deadLine = new Date(new Date().getTime() + 60000);
     // const deadLine = '2022-07-01';
     // const deadLine = '2022-06-14';
 
@@ -151,6 +151,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function showModalByScroll() {
         if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
             openModal();
+            console.log("window.removeEventListener('scroll', showModalByScroll);");
             window.removeEventListener('scroll', showModalByScroll);
         }
     }
