@@ -157,4 +157,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const modalTimerId = setTimeout(openModal, 15000);
 
+    // Используем классы для карточек
+
 });
